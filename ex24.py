@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 print("Lets practice everything")
 print('You\'d need to know \'bout escapes with \\ that do:')
 print('\n newlines and \t tabs.')
@@ -44,3 +45,11 @@ print("We'd have {} beans {} jars, {} crates.".format(*formula))
 #assign that variable to the function
 #create a variable that holds the function
 #print the arguments and function 
+=======
+#printing new lines using \
+
+#use """ to type a paragraph and assign it to the variable poem
+
+#print a bunch of --- to separate it
+#print the poem variable 
+>>>>>>> a7521ce30846b718cc3793d584deb5aa93475ed2
