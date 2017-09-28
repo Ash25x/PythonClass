@@ -218,16 +218,21 @@ numodd(k)
 
 
 #17
+#do the input
 
-# l = input("Enter a string here > ")
-# def strlng(l):
-#     if l == "": return 0
+l = input("Enter a string here > ")
+def strlng(l):
+    counter = 0
+    for char in l:
+        counter += 1
 
 
-# strlng(l)
+strlng(l)
 
 #18
+#do the input
+u = input("Enter a string here > ")
 length = 0
-for char in myString:
+while len(u) 
     length += 1
 print(length)
