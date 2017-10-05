@@ -225,14 +225,13 @@ def strlng(l):
     counter = 0
     for char in l:
         counter += 1
-
+        print(counter)
 
 strlng(l)
 
 #18
 #do the input
 u = input("Enter a string here > ")
-length = 0
-while len(u) 
-    length += 1
-print(length)
+while len(u):
+    u += 1
+    print(u)
