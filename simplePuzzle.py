@@ -35,7 +35,7 @@ def death():
 
 	elif answer == "2":
 		print("\nYOU LOSE")
-		return death()
+		return exit()
 	else:
 		return death()
 
