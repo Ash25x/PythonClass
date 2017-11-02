@@ -67,6 +67,7 @@ after a huge long trip and slash it, killing the Titan""")
             elif action1 == '4':
                 print("""\nThis thing is 90 feet tall. You tried running
 and it caught up and stomped your ass out""")
+                exit()
 
             else:
                 print("A titan is about to kill you idiot, do something")
@@ -90,8 +91,8 @@ the Demon brothers appeared and cut the bridge. You fell to your death""")
 
             elif action2 == '2':
                 print("""\nGood eye! Why is there a puddle on a sunny day in a place where it hasn't rained in days. Your shadow clone went out to cross the bridge.
-\nThe Demon brothers rose up from inside the puddle and attacked the clone thinking it was you. You were able to sneak up on both and use Lightning blade to pierce
-a hole through both their chests""")
+\nThe Demon brothers rose up from inside the puddle and attacked the clone thinking it was you. You were able to sneak up on both and use
+Lightning blade to pierce a hole through both their chests""")
 
 
             elif action2 == '3':
@@ -107,7 +108,7 @@ were in there and got angered and ripped you to shreds""")
                 exit()
 class Sand:
     def mission4(self):
-        print("""So you made it this far. You're wandering through a desert. You take a
+        print("""\nSo you made it this far. You're wandering through a desert. You take a
 step and a bunch of mines start going off! """)
 
         action3 =input("""\n What will you do?
@@ -158,7 +159,7 @@ bigger and got everyone killed""")
             exit()
         elif action4 == '3':
             print("""\nYa...I'm not letting you get away with that again.
-Wrong anime fool!!""")
+Wrong anime fool!! That didn't work and you died""")
             exit()
         elif action4 == '4':
             print("""\nYou neutralized the explosive, but the explosive still came
@@ -168,23 +169,42 @@ down and crushed villagers.""")
             print("Get your shit together and proceed!!!")
             exit()
 
+    def mission6(self):
+        print("""\nDiedara is flying around still dropping explosives. Some rubble
+comes crashing down and your foot is stuck""")
+
+        action5 =input("""\n Did you save those villagers back then?
+        \n1 Yes
+        \n2 No
+        \n >>>   """)
+
+        if action5 == '1':
+            print("""\nThe villagers remembered you saved them and help you get
+your foot out""")
+
+        elif action5 == '2':
+            print("""\nIt's too bad you didn't save them. They don't want to help you now
+and a explosive is dropped killing you""")
+            exit()
+        else:
+            print("Get your shit together and proceed!!!")
+            exit()
+
+#class Ending():
 
 
 
 
 
-class Bonus():
-    def Link(self):
-        c = input("""You see a rift in time and see a boy dressed in green
-		          The boy stays Silent but draws his sword. What do you do?
-				  \nInput 1 for Try and reason
-				  Input 2 for Prepare to fight""")
-        if c == '1':
-            print("You were able to dodge thanks to the reflexes your visual prowess grant you!")
-            return AB
-        elif c == '2':
-            print("Your swords clash and sparks fly")
-            return exit()
+class Ending():
+    def ending(self):
+        print("""\nThe ninja terrorist leaves the village since he is bored
+and nobody here is strong enough to fight him. The villagers are grateful to you
+and have become allies to your village.
+Congrats you passed the missions. We had more code but not enough
+time to troubleshoot. Tell Saroosh to give us more time and we will give you more content""")
+
+
 
 x = Leaf()
 x.mission1()
@@ -193,6 +213,6 @@ x.mission3()
 x = Sand()
 x.mission4()
 x.mission5()
-#xy.mission6()
-y = Bonus()
-y.Link()
+x.mission6()
+x= Ending()
+x.ending()
