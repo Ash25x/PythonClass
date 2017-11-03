@@ -35,6 +35,9 @@ and the rest exploded""")
 eye contact, you were able to put the villagers to sleep and
 snap them out of that cursed exploding jutsu""")
                 return
+            else:
+                print("\nEnglish Mother$%#@ Do you speak it!!! ")
+                exit()
 
 
         def mission2(self):
@@ -202,7 +205,7 @@ class Ending():
 and nobody here is strong enough to fight him. The villagers are grateful to you
 and have become allies to your village.
 Congrats you passed the missions. We had more code but not enough
-time to troubleshoot. Tell Saroosh to give us more time and we will give you more content""")
+time to troubleshoot. Tell Saroosh to give us more time and less hw and we will give you more content. """)
 
 
 
