@@ -1,15 +1,82 @@
 <doc type html>
 <div style="color:#0000FF">
-<p>Hello, I'm Ash. I currently work at Proactive tech and am
-taking Python Class. Always looking to develop a new skill. In my spare time I like recreating fictional characters
-by cosplaying as them. I also enjoy going to conventions, going on cruises,
+<p>Hello, I'm Ash. Support Tech by day and ninja/ghoul by convention.
+ I also enjoy going to conventions, going on cruises,
 going to Resorts where I can relax, going to the gym(when I can),etc.
 I watch anime as well as enjoy shows such as The Flash, Arrow, Daredevil, Game of Thrones, etc.
  </p>
  </div>
 
-<img = src ="https://i.ytimg.com/vi/fUHH_3G_5dw/hqdefault.jpg" >
+ <div class="slideshow-container">
 
+ <div class="mySlides fade">
+   <div class="numbertext">1 / 3</div>
+   <img src="https://pre00.deviantart.net/0fc4/th/pre/i/2017/127/8/0/kaneki_ken__tokyo_ghoul__suu__by_crazymindsacha-db8h1hf.png" style="width:100%">
+   <div class="text">Caption Text</div>
+ </div>
+
+ <div class="mySlides fade">
+   <div class="numbertext">2 / 3</div>
+   <img src="https://images2.alphacoders.com/522/thumb-1920-522622.jpg" style="width:100%">
+   <div class="text">Caption Two</div>
+ </div>
+
+ <div class="mySlides fade">
+   <div class="numbertext">3 / 3</div>
+   <img src="https://images7.alphacoders.com/541/thumb-1920-541200.png" style="width:100%">
+   <div class="text">Caption Three</div>
+ </div>
+
+ </div>
+ <br>
+
+ <div style="text-align:center">
+   <span class="dot"></span>
+   <span class="dot"></span>
+   <span class="dot"></span>
+ </div>
+
+ <script>
+ var slideIndex = 0;
+ showSlides();
+
+ function showSlides() {
+     var i;
+     var slides = document.getElementsByClassName("mySlides");
+     var dots = document.getElementsByClassName("dot");
+     for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+     }
+     slideIndex++;
+     if (slideIndex > slides.length) {slideIndex = 1}
+     for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" active", "");
+     }
+     slides[slideIndex-1].style.display = "block";
+     dots[slideIndex-1].className += " active";
+     setTimeout(showSlides, 2000); // Change image every 2 seconds
+ }
+ </script>
+ <div style="position:relative;width:267px;height:25px;overflow:hidden;">
+ <div style="position:absolute;top:-276px;left:-5px">
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/4dRRuJP7-To?autoplay=1" frameborder="0" allowfullscreen></iframe>
+ </div>
+ </div>
+
+<div class="aux-content-widget-2 floatfix">
+
+
+    <div class="vs">
+    <h1>Which would you be more interested in</h1>
+    <img src="https://pastorchrisjackson.files.wordpress.com/2016/03/batmansuperman2.jpg" onmouseover="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfIJXsqOKl17nAAzHvOj9a3ZHgzitQ8VBGXLw9NUNG6lkSEUtiGg'" onmouseout="this.src='https://images.moviepilot.com/images/c_limit,q_auto:good,w_600/yyb3dkrvo3oyrzvjkhgz/batman-vs-superman-who-really-wins.jpg'" style="width: 815px; height: 400px;" alt="" />
+    <form name="form" action="">
+    <div id="content">
+    <input type="radio" name="loc" onchange="if(this.checked){set_loc('bat.html');}">Batman<br>
+    <input type="radio" name="loc" onchange="if(this.checked){set_loc('supe.html');}">Superman<br>
+    <input type="button" value="Submit" onclick="go();">
+    </div>
+    </form>
+    </div>
 <div>
   <h2> Here is a project I have worked on, a simple Naruto game <a href ="https://github.com/Ash25x/PythonClass/blob/master/simplePuzzle.py"
 >click here</a>
