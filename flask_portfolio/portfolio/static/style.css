@@ -1,0 +1,47 @@
+h2 {
+  color: green;
+}
+
+
+h3{
+  background: red;
+}
+
+table, th, td {
+  border: 2px solid red;
+}
+
+body{
+  margin 100px;
+
+
+}
+
+.back{
+  blue;
+}
+
+#goku{
+  width: 700px;
+}
+
+#mario{
+  width: 750px;
+}
+
+h1{
+  text-align: center;
+}
+
+.github
+{
+  color: grey;
+}
+
+.meme{
+  position: center;
+}
+
+.k {
+  background-color: yellow;
+}

@@ -1,27 +1,24 @@
-## FROM THE CURRENT DIRECTORY, IMPORT APP
+from flask import Flask, render_template, request, url_for
 from . import app
-from flask import render_template, request
-## CREATE AN INDEX ROUTE AND A FUNCTION(PAGE) FOR IT
-
-comments = [{'name' :'Ash','message' : 'Dont like you'},
-			{'name': 'Saroosh', 'message': 'bring me a beer, Please!'}]
 
 
-@app.route('/')
+@app.route("/", methods=['POST', 'GET'])
 def index():
-    print('it\'s running')
-    return render_template('/index.html')
+    if request.method == 'POST':
+        name = request.form['name']
+        message = request.form['message']
 
-@app.route('/profile', methods = ['GET', 'POST'])
+        return render_template('profile.html', name = name, message = message )
+    else:
+        return render_template("index.html")
+
+@app.route("/profile", methods=['POST', 'GET'])
 def profile():
-	if request.method == 'POST':
-		name1 = request.form['name']
-		message1 = request.form['message'] 
-		comments.append({'name' : name1, 'message': message1})
+    if request.method == 'POST':
+        name = request.form['name']
+        message = request.form['message']
+        return render_template("profile.html", name = name, message = message)
 
-		print(comments)
-		return render_template('/info.html', messages = comments)
-	else:
-		print('get method')
-		print(comments)
-		return render_template('info.html', messages= comments)
+@app.route("/annoying")
+def annoying():
+    return render_template("annoying.html")
